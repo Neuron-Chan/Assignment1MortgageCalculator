@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6a6b9c"
+        tools:context=".MainActivity">
+
+        <!-- Text View to display our basic heading of "calculator"-->
+
+        <!-- Edit Text View to input the values -->
+        <TextView
+            android:layout_width="307dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginBottom="502dp"
+            android:scrollbarSize="30dp"
+            android:text=" Mortgage Calculator"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.324" />
+
+        <!-- Edit Text View to input 2nd value-->
+
+        <!-- Edit Text View to input 3rd value-->
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="381dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="416dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Principal amount"
+            android:inputType="number"
+            android:onClick="clearTextNum1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.596" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="380dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="370dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Rate of interest"
+            android:inputType="number"
+            android:onClick="clearTextNum2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.943" />
+
+        <EditText
+            android:id="@+id/num3"
+            android:layout_width="384dp"
+            android:layout_height="87dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Loan term (months)"
+            android:inputType="number"
+            android:onClick="clearTextNum3"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="365dp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="380dp"
+            android:layout_height="82dp"
+            android:background="@android:color/white"
+            android:text="result"
+            android:textColorLink="#673AB7"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="466dp" />
+
+        <Button
+            android:id="@+id/emi"
+            android:layout_width="240dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="568dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:onClick="doEmi"
+            android:text="Calculate Mortgage"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
